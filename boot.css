@@ -87,18 +87,24 @@ input[type=submitLogIn]:focus
     margin: 0;
 }
 
+.Balance-Description
+{
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 20px;
+    padding: 15px;
+}
 .description
 {
 	margin-top: 40px;
 	min-height: 300px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .description p 
 {
 	text-align: justify;
 	font-size: 18px;
-	margin-left: 20px;
 }
 
 .signUp
@@ -140,6 +146,7 @@ input[type=submitLogIn]:focus
 .signUp
 {
 	margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 input[type=Log],
@@ -330,3 +337,89 @@ input[type=button]:hover
     background-color: #35c50c;
     color: #fff;
 }
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+    font-size: 18px;
+    color: #000;
+    height: 30px;
+    text-align: right;
+    line-height: 200%;
+    background-color: #00ff00;
+}
+
+ol a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}    
+
+ol a:hover
+{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+}
+
+ol > li a 
+{
+    height: 30px;
+}
+
+ol > li
+{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+}
+
+ol > li > ul
+{
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+}
+ol > li > ul > li
+{
+    background-color: #66ff66;
+    list-style-type: none;
+    width: 200px;
+}
+
+ol:hover > ul
+{
+    display: block;
+}
+
+ol > li > ul > li
+{
+    position: relative;
+    z-index: 100;
+}
+
+.dropdownMenu 
+{
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.caption 
+{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.table
+{
+    margin-top: 20px;
+}
+

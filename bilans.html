@@ -30,6 +30,8 @@
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="boot.css">
+    <!--<script src="nauka/piechart.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
     <link rel="stylesheet" href="css/fontello.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -37,10 +39,63 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+         ['Ubranie', 3],
+          ['Telekomunikacja', 1],
+          ['Spłata długów', 1],
+          ['Inne wydatki', 1],
+          ['Emerytura', 2],
+          ['Ksią', 2],
+          ['Wycieczka', 2],
+          ['Oszczędności', 2],
+          ['Opieka zdrowotna', 2],
+          ['Higiena', 2],
+          ['Rozrywka', 2],
+          ['Dzieci', 2],
+          ['Jedzenie', 2],
+          ['Mieszkanie', 2],
+          ['Kursy', 2],
+          ['Kredyt', 2],
+          ['Transport', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'Moje wydatki',
+                       'width': 500,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
 </head>
 
 <body onload="counting()">
+ 
   <div class="container">
+   
     <div class="row">
       <div class="col-12">
         <div class="bar">
@@ -48,6 +103,17 @@
             <i class="icon-clock"></i>
           </div>
           <div id="timer" title="Aktualna data"></div>
+          <div class="dropdownMenu" title="Wybierz okres">
+				<ol>
+					<li><a href="#">Bieżący miesiąc</a>
+						<ul> 			
+							<li><a href="#">Poprzedni miesiąc</a></li>
+							<li><a href="#">Bieżący rok</a></li>
+							<li><a href="#">Niestandardowy</a></li>
+						</ul>	
+				    </li>			
+				</ol>
+            </div>
         </div>
       </div>
     </div>
@@ -55,19 +121,147 @@
     <div class="row">
       <div class="col-12">
         <div class="title">
-          <a href="rejestracja.html" class="link">
+          <a href="menu.html" class="link">
             <p>Prowadź w sposób kontrolowany swoje finanse osobiste!</p>
           </a>
         </div>
-      </div>
-    </div>
-     
-      <div class="row">
-        <div class="col-md-12" style="text-align: center">
+        <div class="Balance-Description">
+            <p>Poniżej w tabeli nr 1 przedstawiono sumę przychodów z wybranego okresu czasu w wyszczególnionych kategoriach.
+            Tabela nr 2 prezentuje sumę wydatków w wybranym okresie czasu w poszczególnych kategoriach.
+            Tabela nr 3 to bilans ogólny przedstawiający sumę różnicy przychodów i  wydatków.</p> 
         </div>
       </div>
-
-
+    </div>
+    
+    <div class="row">
+       <div class="col-sm-6">
+         <div class="table">
+             <table border="2">
+                <tr>
+                  <td>KATEGORIE PRYCHODÓW</td>
+                 <td>SUMA PRYCHODÓW</td>
+                </tr>
+                <tr>
+                    <td>Wynagrodzenie</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sprzedaz na Allegro</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Inne</td>
+                    <td></td>
+                </tr>
+             </table>
+         </div>
+           <div class="table">
+             <table border="2">
+                <tr>
+                    <td>Bilans ogółem</td>
+                  </tr>
+                <tr><td>Przychody - Wydatki = </td>
+                    <td>Lorem ipsum.</td>
+                </tr>
+                <tr>
+                    <td>Komentarz</td>
+                    <td>Lorem ipsum.</td>
+                </tr>
+                 </table>
+             </div>
+        </div>
+        
+        <div class="col-sm-6">
+         <div class="table">
+             <table border="2">
+                 <tr>
+                    <td>KATEGORIE WYDATKÓW</td>
+                    <td>SUMA WYDATKÓW</td>
+				</tr>
+                <tr>
+                    <td>Jedzenie</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mieszkanie</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Kursy</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Kredyt</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Transport</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Telekomunikacja</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Opieka zdrowotna</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ubranie</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Higiena</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Rozrywka</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Dzieci</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wycieczka</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Książki</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Spłta długów</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Oszczędności</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Darowizna</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Na złotą jesień, czyli emeryturę</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Inne wydatki</td>
+                    <td></td>
+					</tr>				
+             </table>
+         </div>
+        </div>
+      </div>
+        
+        <div class="row">
+           <div class="col-12">
+             <div id="chart_div"></div>
+             <div class="caption">Wykres obrazujący procentowe zestawienie wydatków</div>
+         </div>
+        </div>
+              
     <div class="row">
       <div class="col-12">
         <div class="footer">
@@ -75,6 +269,7 @@
         </div>
       </div>
     </div>
+    
   </div>
   <script src="js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
