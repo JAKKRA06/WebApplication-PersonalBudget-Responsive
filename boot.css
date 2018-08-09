@@ -220,13 +220,10 @@ img:hover
     margin-left: 50px;
     text-decoration: none;
 }
-
-.linkPhoto p:hover
+.linkPhoto:hover 
 {
     text-decoration: none;
-    color: #000;
 }
-
 .logOut 
 {
     text-align: center;
