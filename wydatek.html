@@ -40,87 +40,91 @@
 </head>
 
 <body onload="counting()">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="bar">
-          <div class="timericon" style="float: left">
-            <i class="icon-clock"></i>
-          </div>
-          <div id="timer" title="Aktualna data"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-12">
-        <div class="title">
-          <a href="rejestracja.html" class="link">
-            <p>Prowadź w sposób kontrolowany swoje finanse osobiste!</p>
-          </a>
-        </div>
-      </div>
-    </div>
+ 
+     <main>
      
-    <div class="row">
-        <div class="col-md-12" style="text-align: center">
-            <h2 contenteditable="true" class="text-center">Dodaj wydatek</h2>
-        </div>
-    </div>
-      
-    <div class="row">
-       <div class="col-12">
-        <div class="name">Kwota:</div>
-        <div class="expenseField">
-            <input type="textMessage" placeholder="Kwota[zł]" onfocus="this.placeholder=''" onblur="this.placeholder='Kwota[zł]'">
-         </div>
-
-        <div class="name">Sposób płatności:</div>
-        <div class="expenseField">
-            <select>
-                <option value="Gotówka">Gotówka</option>
-                <option value="Karta płatnicza">Karta płatnicza</option>
-                <option value="Karta kredytowa">Karta kredytowa</option>
-            </select>
+      <div class="container">
+       
+        <div class="row">
+          <div class="col-12">
+            <div class="bar">
+              <div class="timericon" style="float: left">
+                <i class="icon-clock"></i>
+              </div>
+              <div id="timer" title="Aktualna data"></div>
+            </div>
+          </div>
         </div>
 
-        <div class="name">Data:</div>
-        <div class="expenseField">
-            <input type="textMessage" placeholder="Data[RRRR-MM-DD]" onblur="this.placeholder='Data[RRRR-MM-DD]'">
-        </div>
-        
-        <div class="name">Kategoria:</div>
-        <div class="expenseField">
-            <select>
-                <option value="Jedzenie">Jedzenie</option>
-                <option value="Mieszkanie">Mieszkanie</option>
-                <option value="Kursy">Kursy</option>
-                <option value="Kredyt">Kredyt</option>
-                <option value="Transport">Transport</option>
-                <option value="Telekomunikacja">Telekomunikacja</option>
-                <option value="Opieka zdrowotna">Opieka zdrowotna</option>
-                <option value="Ubranie">Ubranie</option>
-                <option value="Higiena">Higiena</option>
-                <option value="Dzieci">Dzieci</option>
-                <option value="Rozrywka">Rozrywka</option>
-                <option value="Wycieczka">Wycieczka</option>
-                <option value="Książki">Książki</option>
-                <option value="Oszczędności">Oszczędności</option>
-                <option value="Spłta długów">Spłta długów</option>
-                <option value="Darowizna">Darowizna</option>
-                <option value="Inne wydatki">Inne wydatki</option>
-                <option value="Na złotą jesień, czyli emeryturę">Na złotą jesień, czyli emeryturę</option>
-            </select>
+        <div class="row">
+          <div class="col-12">
+            <header>
+                  <a href="rejestracja.html" class="link">
+                    <p>Prowadź w sposób kontrolowany swoje finanse osobiste!</p>
+                  </a>
+              </header>
+          </div>
         </div>
 
-        <div class="name">Komentarz:</div>
-        <div class="expenseField">
-            <input type="textMessage" placeholder="[opcjonalnie]" onfocus="this.placeholder=''" onblur="this.placeholder='[opcjonalnie]'">
+        <div class="row">
+            <div class="col-md-12" style="text-align: center">
+                <h2 contenteditable="true" class="text-center">Dodaj wydatek</h2>
+            </div>
         </div>
-        
+
+        <div class="row">
+           <div class="col-12">
+            <div class="name">Kwota:</div>
+            <div class="expenseField">
+                <input type="textMessage" placeholder="Kwota[zł]" onfocus="this.placeholder=''" onblur="this.placeholder='Kwota[zł]'">
+             </div>
+
+            <div class="name">Sposób płatności:</div>
+            <div class="expenseField">
+                <select>
+                    <option value="Gotówka">Gotówka</option>
+                    <option value="Karta płatnicza">Karta płatnicza</option>
+                    <option value="Karta kredytowa">Karta kredytowa</option>
+                </select>
+            </div>
+
+            <div class="name">Data:</div>
+            <div class="expenseField">
+                <input type="textMessage" placeholder="Data[RRRR-MM-DD]" onblur="this.placeholder='Data[RRRR-MM-DD]'">
+            </div>
+
+            <div class="name">Kategoria:</div>
+            <div class="expenseField">
+                <select>
+                    <option value="Jedzenie">Jedzenie</option>
+                    <option value="Mieszkanie">Mieszkanie</option>
+                    <option value="Kursy">Kursy</option>
+                    <option value="Kredyt">Kredyt</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Telekomunikacja">Telekomunikacja</option>
+                    <option value="Opieka zdrowotna">Opieka zdrowotna</option>
+                    <option value="Ubranie">Ubranie</option>
+                    <option value="Higiena">Higiena</option>
+                    <option value="Dzieci">Dzieci</option>
+                    <option value="Rozrywka">Rozrywka</option>
+                    <option value="Wycieczka">Wycieczka</option>
+                    <option value="Książki">Książki</option>
+                    <option value="Oszczędności">Oszczędności</option>
+                    <option value="Spłta długów">Spłta długów</option>
+                    <option value="Darowizna">Darowizna</option>
+                    <option value="Inne wydatki">Inne wydatki</option>
+                    <option value="Na złotą jesień, czyli emeryturę">Na złotą jesień, czyli emeryturę</option>
+                </select>
+            </div>
+
+            <div class="name">Komentarz:</div>
+            <div class="expenseField">
+                <input type="textMessage" placeholder="[opcjonalnie]" onfocus="this.placeholder=''" onblur="this.placeholder='[opcjonalnie]'">
+            </div>
+
+            </div>
         </div>
-    </div>
-    
+
         <div class="row">
             <div class="col-12">
               <div class="buttons">
@@ -130,14 +134,16 @@
             </div>
         </div>
 
-    <div class="row">
-      <div class="col-12">
-        <div class="footer">
-          <p>Wszelkie prawa zastrzeżone © 2018 Jakub Krajniewski</p>
+        <div class="row">
+          <div class="col-12">
+            <footer>  
+                 <p>Wszelkie prawa zastrzeżone &copy; 2018 Jakub Krajniewski</p>
+            </footer>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </main>
+    
   <script src="js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

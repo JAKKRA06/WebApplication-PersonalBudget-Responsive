@@ -40,80 +40,85 @@
 </head>
 
 <body onload="counting()">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="bar">
-          <div class="timericon" style="float: left">
-            <i class="icon-clock"></i>
-          </div>
-          <div id="timer" title="Aktualna data"></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-12">
-        <div class="title">
-          <a href="rejestracja.html" class="link">
-            <p>Prowadź w sposób kontrolowany swoje finanse osobiste!</p>
-          </a>
-        </div>
-      </div>
-    </div>
-     
-      <div class="row">
-        <div class="col-md-12" style="text-align: center">
-          <h2 contenteditable="true" class="text-center">Dodaj przychód</h2>
-        </div>
-      </div>
-      
-    <div class="row">
-       <div class="col-12">
-        <div class="name">Kwota:</div>
-        <div class="expenseField">
-            <input type="textMessage" placeholder="Kwota[zł]" onfocus="this.placeholder=''" onblur="this.placeholder='Kwota[zł]'">
-         </div>
 
-        <div class="name">Data:</div>
-        <div class="expenseField">
-            <input type="textMessage" placeholder="Data[RRRR-MM-DD]" onblur="this.placeholder='Data[RRRR-MM-DD]'">
-        </div>
-        
-        <div class="name">Kategoria:</div>
-        <div class="expenseField">
-            <select>
-                <option value="Wynagrodzenie">Wynagrodzenie</option>
-                <option value="Odsetki bankowe">Odsetki bankowe</option>
-                <option value="Sprzedaz na Allegro">Sprzedaz na Allegro</option>
-                <option value="Inne">Inne</option>
-            </select>
-        </div>
-        <div class="name">Komentarz:</div>
-        <div class="expenseField">
-            <input type="textMessage" placeholder="[Opcjonalnie]" onfocus="this.placeholder=''" onblur="this.placeholder='[Opcjonalnie]'">
-        </div>
-        
-        </div>
-    </div>
-    
+    <main>
+ 
+      <div class="container">
+       
         <div class="row">
-            <div class="col-12">
-              <div class="buttons">
-                <a href ="#"><input type="button" value="Dodaj"></a>
-                <a href="menu.html"><input type="button" value="Anuluj"></a>
-                </div> 
+          <div class="col-12">
+            <div class="bar">
+              <div class="timericon" style="float: left">
+                <i class="icon-clock"></i>
+              </div>
+              <div id="timer" title="Aktualna data"></div>
+             </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <header>
+              <a href="rejestracja.html" class="link">
+                <p>Prowadź w sposób kontrolowany swoje finanse osobiste!</p>
+              </a>
+            </header>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-md-12" style="text-align: center">
+              <h2 contenteditable="true" class="text-center">Dodaj przychód</h2>
+            </div>
+          </div>
+
+        <div class="row">
+           <div class="col-12">
+            <div class="name">Kwota:</div>
+            <div class="expenseField">
+                <input type="textMessage" placeholder="Kwota[zł]" onfocus="this.placeholder=''" onblur="this.placeholder='Kwota[zł]'">
+             </div>
+
+            <div class="name">Data:</div>
+            <div class="expenseField">
+                <input type="textMessage" placeholder="Data[RRRR-MM-DD]" onblur="this.placeholder='Data[RRRR-MM-DD]'">
+            </div>
+
+            <div class="name">Kategoria:</div>
+            <div class="expenseField">
+                <select>
+                    <option value="Wynagrodzenie">Wynagrodzenie</option>
+                    <option value="Odsetki bankowe">Odsetki bankowe</option>
+                    <option value="Sprzedaz na Allegro">Sprzedaz na Allegro</option>
+                    <option value="Inne">Inne</option>
+                </select>
+            </div>
+            <div class="name">Komentarz:</div>
+            <div class="expenseField">
+                <input type="textMessage" placeholder="[Opcjonalnie]" onfocus="this.placeholder=''" onblur="this.placeholder='[Opcjonalnie]'">
+            </div>
+
             </div>
         </div>
 
-    <div class="row">
-      <div class="col-12">
-        <div class="footer">
-          <p>Wszelkie prawa zastrzeżone © 2018 Jakub Krajniewski</p>
+            <div class="row">
+                <div class="col-12">
+                  <div class="buttons">
+                    <a href ="#"><input type="button" value="Dodaj"></a>
+                    <a href="menu.html"><input type="button" value="Anuluj"></a>
+                    </div> 
+                </div>
+            </div>
+
+        <div class="row">
+          <div class="col-12">
+            <footer>  
+                 <p>Wszelkie prawa zastrzeżone &copy; 2018 Jakub Krajniewski</p>
+            </footer>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </main>      
   <script src="js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

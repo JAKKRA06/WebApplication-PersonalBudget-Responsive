@@ -7,11 +7,6 @@
     font-size: 20px;
 }
 
-.row
-{
-	margin-bottom: 5px;
-}
-
 body
 {
 	/*Background pattern from subtlepatterns.com*/
@@ -72,7 +67,7 @@ input[type=submitLogIn]:focus
 	margin-top: 5px;
 }
 
-.footer
+footer
 {
 	background-color: #00ff00;
 	margin-bottom: 5px;
@@ -81,7 +76,7 @@ input[type=submitLogIn]:focus
     padding: 10px;
 }
 
-.footer p 
+footer p 
 {	
 	font-size: 18px; 
     margin: 0;
@@ -94,14 +89,14 @@ input[type=submitLogIn]:focus
     font-size: 20px;
     padding: 15px;
 }
-.description
+article
 {
 	margin-top: 40px;
 	min-height: 300px;
     padding: 20px;
 }
 
-.description p 
+article p 
 {
 	text-align: justify;
 	font-size: 18px;
@@ -113,22 +108,21 @@ input[type=submitLogIn]:focus
 	min-height: 300px;
 }
 
-.description h2
+article h2
 {
 	font-size: 30px;
 	text-align: center;
 }
 	
-.title
+header
 {	
 	margin-top: 20px;
 	text-align: center;
 }
 	
-.title p
+header p
 {
 	font-size: 36px;
-	
 }
 
 .link
@@ -213,7 +207,7 @@ img:hover
 	transform: scale(0.9);
 }
 
-.linkPhoto p
+.linkPhoto figcaption
 {
     color: #000;
     font-size: 20px;
@@ -418,5 +412,13 @@ ol > li > ul > li
 .table
 {
     margin-top: 20px;
+    text-align: center;
 }
 
+#piechart
+{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
