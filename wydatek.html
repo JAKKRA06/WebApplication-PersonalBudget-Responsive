@@ -47,12 +47,10 @@
        
         <div class="row">
           <div class="col-12">
-            <div class="bar">
-              <div class="timericon" style="float: left">
-                <i class="icon-clock"></i>
-              </div>
-              <div id="timer" title="Aktualna data"></div>
-            </div>
+            <nav class="bar">
+              <figure class="timericon"><i class="icon-clock"></i></figure>
+              <figure id="timer" title="Aktualna data"></figure>
+            </nav>
           </div>
         </div>
 
@@ -73,64 +71,65 @@
         </div>
 
         <div class="row">
-           <div class="col-12">
-            <div class="name">Kwota:</div>
-            <div class="expenseField">
-                <input type="textMessage" placeholder="Kwota[zł]" onfocus="this.placeholder=''" onblur="this.placeholder='Kwota[zł]'">
-             </div>
+            <div class="col-12">
+               <section>
+                    <article class="name">Kwota:</article>
+                    <article class="expenseField">
+                        <input type="textMessage" placeholder="Kwota[zł]" onfocus="this.placeholder=''" onblur="this.placeholder='Kwota[zł]'">
+                     </article>
 
-            <div class="name">Sposób płatności:</div>
-            <div class="expenseField">
-                <select>
-                    <option value="Gotówka">Gotówka</option>
-                    <option value="Karta płatnicza">Karta płatnicza</option>
-                    <option value="Karta kredytowa">Karta kredytowa</option>
-                </select>
-            </div>
+                    <article class="name">Sposób płatności:</article>
+                    <article class="expenseField">
+                        <select>
+                            <option value="Gotówka">Gotówka</option>
+                            <option value="Karta płatnicza">Karta płatnicza</option>
+                            <option value="Karta kredytowa">Karta kredytowa</option>
+                        </select>
+                    </article>
 
-            <div class="name">Data:</div>
-            <div class="expenseField">
-                <input type="textMessage" placeholder="Data[RRRR-MM-DD]" onblur="this.placeholder='Data[RRRR-MM-DD]'">
-            </div>
+                    <article class="name">Data:</article>
+                    <article class="expenseField">
+                        <input type="textMessage" placeholder="Data[RRRR-MM-DD]" onblur="this.placeholder='Data[RRRR-MM-DD]'">
+                    </article>
 
-            <div class="name">Kategoria:</div>
-            <div class="expenseField">
-                <select>
-                    <option value="Jedzenie">Jedzenie</option>
-                    <option value="Mieszkanie">Mieszkanie</option>
-                    <option value="Kursy">Kursy</option>
-                    <option value="Kredyt">Kredyt</option>
-                    <option value="Transport">Transport</option>
-                    <option value="Telekomunikacja">Telekomunikacja</option>
-                    <option value="Opieka zdrowotna">Opieka zdrowotna</option>
-                    <option value="Ubranie">Ubranie</option>
-                    <option value="Higiena">Higiena</option>
-                    <option value="Dzieci">Dzieci</option>
-                    <option value="Rozrywka">Rozrywka</option>
-                    <option value="Wycieczka">Wycieczka</option>
-                    <option value="Książki">Książki</option>
-                    <option value="Oszczędności">Oszczędności</option>
-                    <option value="Spłta długów">Spłta długów</option>
-                    <option value="Darowizna">Darowizna</option>
-                    <option value="Inne wydatki">Inne wydatki</option>
-                    <option value="Na złotą jesień, czyli emeryturę">Na złotą jesień, czyli emeryturę</option>
-                </select>
-            </div>
+                    <article class="name">Kategoria:</article>
+                    <article class="expenseField">
+                        <select>
+                            <option value="Jedzenie">Jedzenie</option>
+                            <option value="Mieszkanie">Mieszkanie</option>
+                            <option value="Kursy">Kursy</option>
+                            <option value="Kredyt">Kredyt</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Telekomunikacja">Telekomunikacja</option>
+                            <option value="Opieka zdrowotna">Opieka zdrowotna</option>
+                            <option value="Ubranie">Ubranie</option>
+                            <option value="Higiena">Higiena</option>
+                            <option value="Dzieci">Dzieci</option>
+                            <option value="Rozrywka">Rozrywka</option>
+                            <option value="Wycieczka">Wycieczka</option>
+                            <option value="Książki">Książki</option>
+                            <option value="Oszczędności">Oszczędności</option>
+                            <option value="Spłta długów">Spłta długów</option>
+                            <option value="Darowizna">Darowizna</option>
+                            <option value="Inne wydatki">Inne wydatki</option>
+                            <option value="Na złotą jesień, czyli emeryturę">Na złotą jesień, czyli emeryturę</option>
+                        </select>
+                    </article>
 
-            <div class="name">Komentarz:</div>
-            <div class="expenseField">
-                <input type="textMessage" placeholder="[opcjonalnie]" onfocus="this.placeholder=''" onblur="this.placeholder='[opcjonalnie]'">
-            </div>
-
-            </div>
-        </div>
+                    <article class="name">Komentarz:</article>
+                    <article class="expenseField">
+                        <input type="textMessage" placeholder="[opcjonalnie]" onfocus="this.placeholder=''" onblur="this.placeholder='[opcjonalnie]'">
+                    </article>
+                </section>
+              </div>
+          </div>
 
         <div class="row">
             <div class="col-12">
-              <div class="buttons">
-                <a href ="#"><input type="button" value="Dodaj"></a>
-                <a href="menu.html"><input type="button" value="Anuluj"></a>
-                </div> 
+              <section class="buttons">
+                    <a href ="#"><input type="button" value="Dodaj"></a>
+                    <a href="menu.html"><input type="button" value="Anuluj"></a>
+                </section> 
             </div>
         </div>
 
@@ -141,7 +140,9 @@
             </footer>
           </div>
         </div>
+        
       </div>
+      
     </main>
     
   <script src="js/bootstrap.min.js"></script>

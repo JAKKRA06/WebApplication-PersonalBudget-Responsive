@@ -48,10 +48,8 @@
         <div class="row">
           <div class="col-12">
             <div class="bar">
-              <div class="timericon" style="float: left">
-                <i class="icon-clock"></i>
-              </div>
-              <div id="timer" title="Aktualna data"></div>
+              <figure class="timericon" style="float: left"><i class="icon-clock"></i></figure>
+              <figure id="timer" title="Aktualna data"></figure>
              </div>
           </div>
         </div>
@@ -66,49 +64,51 @@
           </div>
         </div>
 
-          <div class="row">
-            <div class="col-md-12" style="text-align: center">
-              <h2 contenteditable="true" class="text-center">Dodaj przychód</h2>
-            </div>
+      <div class="row">
+        <div class="col-md-12" style="text-align: center">
+            <header><h2 contenteditable="true" class="text-center">Dodaj przychód</h2></header>
           </div>
+      </div>
 
         <div class="row">
            <div class="col-12">
-            <div class="name">Kwota:</div>
-            <div class="expenseField">
-                <input type="textMessage" placeholder="Kwota[zł]" onfocus="this.placeholder=''" onblur="this.placeholder='Kwota[zł]'">
-             </div>
+               <section>
+                    <article class="name">Kwota:</article>
+                    <article class="expenseField">
+                        <input type="textMessage" placeholder="Kwota[zł]" onfocus="this.placeholder=''" onblur="this.placeholder='Kwota[zł]'">
+                     </article>
 
-            <div class="name">Data:</div>
-            <div class="expenseField">
-                <input type="textMessage" placeholder="Data[RRRR-MM-DD]" onblur="this.placeholder='Data[RRRR-MM-DD]'">
-            </div>
+                    <article class="name">Data:</article>
+                    <article class="expenseField">
+                        <input type="textMessage" placeholder="Data[RRRR-MM-DD]" onblur="this.placeholder='Data[RRRR-MM-DD]'">
+                    </article>
 
-            <div class="name">Kategoria:</div>
-            <div class="expenseField">
-                <select>
-                    <option value="Wynagrodzenie">Wynagrodzenie</option>
-                    <option value="Odsetki bankowe">Odsetki bankowe</option>
-                    <option value="Sprzedaz na Allegro">Sprzedaz na Allegro</option>
-                    <option value="Inne">Inne</option>
-                </select>
-            </div>
-            <div class="name">Komentarz:</div>
-            <div class="expenseField">
-                <input type="textMessage" placeholder="[Opcjonalnie]" onfocus="this.placeholder=''" onblur="this.placeholder='[Opcjonalnie]'">
-            </div>
-
-            </div>
+                    <article class="name">Kategoria:</article>
+                    <article class="expenseField">
+                        <select>
+                            <option value="Wynagrodzenie">Wynagrodzenie</option>
+                            <option value="Odsetki bankowe">Odsetki bankowe</option>
+                            <option value="Sprzedaz na Allegro">Sprzedaz na Allegro</option>
+                            <option value="Inne">Inne</option>
+                        </select>
+                    </article>
+                    
+                    <article class="name">Komentarz:</article>
+                    <article class="expenseField">
+                        <input type="textMessage" placeholder="[Opcjonalnie]" onfocus="this.placeholder=''" onblur="this.placeholder='[Opcjonalnie]'">
+                    </article>
+                </section>
+           </div>
         </div>
 
-            <div class="row">
-                <div class="col-12">
-                  <div class="buttons">
-                    <a href ="#"><input type="button" value="Dodaj"></a>
-                    <a href="menu.html"><input type="button" value="Anuluj"></a>
-                    </div> 
-                </div>
+        <div class="row">
+            <div class="col-12">
+              <section class="buttons">
+                <a href ="#"><input type="button" value="Dodaj"></a>
+                <a href="menu.html"><input type="button" value="Anuluj"></a>
+                </section> 
             </div>
+        </div>
 
         <div class="row">
           <div class="col-12">
@@ -117,8 +117,11 @@
             </footer>
           </div>
         </div>
+        
       </div>
-    </main>      
+      
+    </main>  
+        
   <script src="js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

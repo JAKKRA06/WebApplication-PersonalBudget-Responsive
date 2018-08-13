@@ -10,6 +10,7 @@
     <meta name="author" content="Jakub Krajniewski">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
   	
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -36,12 +37,14 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="timer.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="responsive.js"></script>
     <script type="text/javascript">
 
       // Load the Visualization API and the corechart package.
@@ -50,9 +53,6 @@
       // Set a callback to run when the Google Visualization API is loaded.
       google.charts.setOnLoadCallback(drawChart);
 
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
       function drawChart() {
 
         // Create the data table.
@@ -82,7 +82,7 @@
         // Set chart options
         var options = {'title':'Moje wydatki',
                        'width': 500,
-                       'height':300};
+                       'height':400};
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
@@ -99,24 +99,23 @@
       <div class="container">
 
         <div class="row">
+         
           <div class="col-12">
-            <div class="bar">
-              <div class="timericon" style="float: left">
-                <i class="icon-clock"></i>
-              </div>
-              <div id="timer" title="Aktualna data"></div>
-              <div class="dropdownMenu" title="Wybierz okres">
-                    <ol>
-                        <li><a href="#">Bieżący miesiąc</a>
-                            <ul> 			
-                                <li><a href="#">Poprzedni miesiąc</a></li>
-                                <li><a href="#">Bieżący rok</a></li>
-                                <li><a href="#">Niestandardowy</a></li>
-                            </ul>	
-                        </li>			
-                    </ol>
-                </div>
-            </div>
+            
+             <nav class="bar">
+                <figure class="timericon"><i class="icon-clock"></i></figure>
+                 <figure id="timer" title="Aktualna data"></figure>
+                   <section class="topnav" id="myTopnav">
+                      <a href="#" class="active">Bieżący miesiąc</a>
+                      <a href="#">Poprzedni miesiąc</a>
+                      <a href="#">Bieżący rok</a>
+                      <a href="#">Niestandardowy</a>
+                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </section>
+             </nav>
+          
           </div>
         </div>
 
@@ -138,7 +137,7 @@
 
         <div class="row">
            <div class="col-sm-6">
-             <div class="table">
+             <section class="table">
                  <table border="2">
                     <tr>
                       <td>KATEGORIE PRZYCHODÓW</td>
@@ -157,25 +156,25 @@
                         <td></td>
                     </tr>
                  </table>
-             </div>
-               <div class="table">
-                 <table border="2">
-                    <tr>
-                        <td colspan="2">BILANS OGÓŁEM</td>
-                      </tr>
-                    <tr><td>Przychody - Wydatki = </td>
-                        <td>Lorem ipsum.</td>
-                    </tr>
-                    <tr>
-                        <td>Komentarz</td>
-                        <td>Lorem ipsum.</td>
-                    </tr>
-                     </table>
-                 </div>
+             </section>
+           <section class="table">
+             <table border="2">
+                <tr>
+                    <td colspan="2">BILANS OGÓŁEM</td>
+                  </tr>
+                <tr><td>Przychody - Wydatki = </td>
+                    <td>Lorem ipsum.</td>
+                </tr>
+                <tr>
+                    <td>Komentarz</td>
+                    <td>Lorem ipsum.</td>
+                </tr>
+                 </table>
+            </section>
             </div>
 
             <div class="col-sm-6">
-             <div class="table">
+             <section class="table">
                  <table border="2">
                      <tr>
                         <td>KATEGORIE WYDATKÓW</td>
@@ -254,16 +253,16 @@
                         <td></td>
                         </tr>				
                  </table>
-             </div>
+             </section>
             </div>
           </div>
 
-            <div class="row">
-               <div class="col-12">
-                 <div id="chart_div"></div>
-                   <figcaption id="piechart">Wykres obrazujący procentowe zestawienie wydatków</figcaption>
-                 </div>
-            </div>
+        <div class="row">
+           <div class="col-12">
+             <section id="chart_div"></section>
+               <figcaption id="piechart">Wykres obrazujący procentowe zestawienie wydatków</figcaption>
+             </div>
+        </div>
 
         <div class="row">
           <div class="col-12">
@@ -274,6 +273,7 @@
         </div>
 
       </div>
+      
     </main>
     
   <script src="js/bootstrap.min.js"></script>
